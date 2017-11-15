@@ -16,10 +16,11 @@ modules still in development.
 - two 8-position DIP switches for configuring firmware
 - header for accessing chip GPIOs and Address and Reset signals
 - header for accessing controller and port expander
-- header for external I2C control
 - headers for AVCC,VCC,VDD, and XO(clock) VDD that support both Trident and AVCC modules
 - header for Lock/Auto-mute LEDs (on which LEDs can be soldered directly)
-- 3.3V regulator for microcontroller and port expander.
+- 3.3V regulator for microcontroller and port expander etc
+- header for external I2C control including 3.3V(up to 500ma) from controller regulator
+- a precision resistor and a filter cap on GPIO2 for DAC optional auto-level adjustment feature (firmware dependant)
 
 # Assembly Notes
 ---
