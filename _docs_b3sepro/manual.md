@@ -5,7 +5,7 @@ toc: true
 ---
 # Overview
 ---
-For standard stereo firmware please see [Buffalo III SE Pro On-Board Firmware](https://github.com/twistedpearaudio/Buffalo-III-SE-Pro-On-Board-Firmware)
+**For standard stereo firmware please see [Buffalo III SE Pro On-Board Firmware](https://github.com/twistedpearaudio/Buffalo-III-SE-Pro-On-Board-Firmware)**
 
 It is important to review the firmware settings prior to operating the DAC.
 
@@ -54,10 +54,10 @@ solder the female analog output headers to the bottom of the board and the male 
 # Power Requirements:
 
 The VD supply is routed to all of the Trident supply header input pins. It also powers the on-board regulator for the
-controller. Be sure you you don't exceed the input voltage the Tridents (or any other regulator) and keep in mind that
-the ~1.2V supply has quite a drop and will get hotter as voltage rises. 
+controller. Be sure you don't exceed the input voltage the Tridents (or any other regulator) and keep in mind that
+the ~1.2V supply has large a drop and will get hotter as voltage rises. 
 
-It is recommended to use Twisted Pear Audio "Trident SR" regulators (Series Reg) "AVCC SR" modules. The AVCC SR module 
+It is advised to use Twisted Pear Audio "Trident SR" regulators (Series Reg) "AVCC SR" modules. The AVCC SR module 
 has two separate ultra low noise purpose made series regulators for AVCC_L and AVCC_R - it is designed to sit neatly
 over the DAC for an ultra short path to the DAC supply pins. 
 
