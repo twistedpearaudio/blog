@@ -33,17 +33,17 @@ For standard stereo firmware please see [Buffalo III SE Pro On-Board Firmware](h
 ---
 **Please read this before you start soldering!!!**
 
-### Digital Input Terminal Blocks
+## Digital Input Terminal Blocks
 **Important!!!** Because we pre-mount uFL connectors on the PCB if you wish to use the terminal blocks you need to mount the terminal
 blocks on the bottom of the PCB - even though the silk is on top.
 ![Soldering Input](images/IMG_2176.jpg)
 
-### Analog Output Headers
+## Analog Output Headers
 When using output stages like the Mercury, Ivy, Legato that mount directly to the Buffalo - it is also recommended you 
 solder the female analog output headers to the bottom of the board and the male (long tail) headers to the output stage.
 ![Soldering Outputs](images/IMG_2177.jpg)
 
-## Power Requirements:
+# Power Requirements:
 
 The VD supply is routed to all of the Trident supply header input pins. It also powers the on-board regulator for the
 controller. Be sure you you don't exceed the input voltage the Tridents (or any other regulator) and keep in mind that
@@ -67,9 +67,9 @@ and no more than 1.5V when operating with sample rate above 192Khz or DSD128 wit
 
 *note: current is stated for 44.1khz input signal and 100Mhz master clock current consumption rises with sample rate
 
-## Module Headers
+# Module Headers
 
-### GPIO
+## GPIO
 
 The GPIO header exposes DVCC and GND from the DAC as well as the following:
 
@@ -84,7 +84,7 @@ Any controller must properly reset the DAC after power up conditions are met.
 ![GPIO Header1](images/IMG_2178.jpg)
 ![GPIO Header2](images/gpio.png)
 
-### LED(LOCK/AUTOMUTE)
+## LED(LOCK/AUTOMUTE)
 
 ![GPIO Header2](images/leds.png)
 ![GPIO Header1](images/IMG_2180.jpg)
