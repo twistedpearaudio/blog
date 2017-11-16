@@ -86,6 +86,6 @@ Any controller must properly reset the DAC after power up conditions are met.
 
 ### LED(LOCK/AUTOMUTE)
 
-![GPIO Header2](images/led.png)
+![GPIO Header2](images/leds.png)
 ![GPIO Header1](images/IMG_2180.jpg)
 
