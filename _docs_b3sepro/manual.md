@@ -44,4 +44,48 @@ solder the female analog output headers to the bottom of the board and the male 
 ![Soldering Outputs](images/IMG_2177.jpg)
 
 ## Power Requirements:
-The 
+
+The VD supply is routed to all of the Trident supply header input pins. It also powers the on-board regulator for the
+controller. Be sure you you don't exceed the input voltage the Tridents (or any other regulator) and keep in mind that
+the ~1.2V supply has quite a drop and will get hotter as voltage rises. 
+
+It is recommended to use Twisted Pear Audio "Trident SR" regulators (Series Reg) "AVCC SR" modules. The AVCC SR module 
+has two separate ultra low noise purpose made series regulators for AVCC_L and AVCC_R - it is designed to sit neatly
+over the DAC for an ultra short path to the DAC supply pins. 
+
+**Important!!!** Trident SR and AVCC SR should have an input voltage of 5VDC. It is not recommended to exceed 5VDC on 
+the VD input when using those modules. 
+
+In all - this module requires 5 regulators (all voltages DC):
+
+- VDD: ~1.2 - 1.3V ~200ma *Note - nominally this is 1.2V but ESS sent a design notice that it should actually be above 1.25V '
+and no more than 1.5V when operating with sample rate above 192Khz or DSD128 with the ES9038*
+- DVCC: 3.3V ~10ma
+- AVCCL: 3.3V-4V ~100ma
+- AVCCR: 3.3V-4V ~100ma
+- VDD_XO: 3.3V ~ 25ma
+
+*note: current is stated for 44.1khz input signal and 100Mhz master clock current consumption rises with sample rate
+
+## Module Headers
+
+### GPIO
+
+The GPIO header exposes DVCC and GND from the DAC as well as the following:
+
+- GPIO1-4 controllers can set the GPIO pins for special functions. This module facilitates using GPIO4 for indicating
+lock and GPIO1 for indicating AUTOMUTE by including series resistors and connecting those nets to an LED header.
+If you plan on using GPIO1 or GPIO4 for some other purpose it is recommended you leave the LEDs off.
+- DAC_ADDR sets the DAC's I2C address. Open or Low = 0x90 and High = 0x92.
+- DAC_RESET active low DAC reset. The on-board controller is connected to this pin. 
+Any controller must properly reset the DAC after power up conditions are met. 
+**Important** do not short this pin high or low if you are using the on-board controller.
+
+![GPIO Header1](images/IMG_2178.jpg)
+![GPIO Header2](images/gpio.png)
+
+### LED(LOCK/AUTOMUTE)
+
+![GPIO Header2](images/led.png)
+![GPIO Header1](images/IMG_2180.jpg)
+
