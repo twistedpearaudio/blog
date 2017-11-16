@@ -5,11 +5,19 @@ toc: true
 ---
 # Overview
 ---
+For standard stereo firmware please see [Buffalo III SE Pro On-Board Firmware](https://github.com/twistedpearaudio/Buffalo-III-SE-Pro-On-Board-Firmware)
+
+It is important to review the firmware settings prior to operating the DAC.
+
 The Buffalo DAC modules have a long lineage that tracks closely with the ES90xx series of DAC chips
 going all the way from the original Buffalo based on the ES9008 to this module based on the ES9028/38 chips with new
 modules still in development.
 
-For standard stereo firmware please see [Buffalo III SE Pro On-Board Firmware](https://github.com/twistedpearaudio/Buffalo-III-SE-Pro-On-Board-Firmware)
+This module come with either the ES9028 or the ES9038 which are identical in function other than supply current 
+requirements and output current.
+
+The ES9028 has a full scale output of 0.924 * AVCC at 202(+/-14%) ohms for the ES9028 and 50.5(+/-14%) ohms for the ES9038
+
 
 **Contents:**
 * TOC
