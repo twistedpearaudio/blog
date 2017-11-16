@@ -22,6 +22,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 github_username:  twistedpearaudio
 theme: minima
+markdown: kramdown
 plugins:
   - jekyll-feed
 collections:
