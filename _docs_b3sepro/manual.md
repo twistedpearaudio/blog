@@ -15,7 +15,7 @@ The Buffalo DAC modules have a long lineage that tracks closely with the ES90xx 
 going all the way from the original Buffalo based on the ES9008 to this module based on the ES9028/38 chips with new
 modules still in development.
 
-This module come with either the ES9028 or the ES9038 which are identical in function other than supply current 
+The module comes with either the ES9028 or the ES9038 which are identical in function other than supply current 
 requirements and output current.
 
 The ES9028 has a full scale output of 0.924 * AVCC at 202(+/-14%) ohms for the ES9028 and 50.5(+/-14%) ohms for the ES9038
@@ -68,14 +68,15 @@ the VD input when using those modules.
 
 In all - this module requires 5 regulators (all voltages DC):
 
-- VDD: ~1.2 - 1.3V ~200ma *Note - nominally this is 1.2V but ESS sent a design notice that it should actually be above 1.25V '
+- VDD: ~1.2 - 1.3V ~220ma *Note - nominally this is 1.2V but ESS sent a design notice that it should actually be above 1.25V '
 and no more than 1.5V when operating with sample rate above 192Khz or DSD128 with the ES9038*
 - DVCC: 3.3V ~10ma
 - AVCCL: 3.3V-4V ~100ma
 - AVCCR: 3.3V-4V ~100ma
 - VDD_XO: 3.3V ~ 25ma
 
-*note: current is stated for 44.1khz input signal and 100Mhz master clock current consumption rises with sample rate
+*note: current is stated for ES9038 with 44.1khz input signal and 100Mhz master clock current consumption rises with 
+sample rate - ES9028 will use less current.
 
 # Module Headers
 
