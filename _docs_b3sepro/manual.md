@@ -6,6 +6,7 @@ toc: true
 # Overview
 ---
 **For standard stereo firmware please see [Buffalo III SE Pro On-Board Firmware](https://github.com/twistedpearaudio/Buffalo-III-SE-Pro-On-Board-Firmware)**
+you will find all of the switch setting for that firmware documented there.
 
 It is important to review the firmware settings prior to operating the DAC.
 
