@@ -69,6 +69,59 @@ and no more than 1.5V when operating with sample rate above 192Khz or DSD128 wit
 
 # Module Headers
 
+## Digital Inputs
+
+How input is handled is firmware dependant - please see the firmware documentation.
+
+The module supports both Serial data input (DSD/PCM) and SPDIF input.
+
+Serial input takes:
+
+- DCK - bit clock
+- D1 - PCM LRCK(Frame clock) or DSD channel 1
+- D2 - PCM Data or DSD channel 2
+
+The SPDIF input accepts consumer level or CMOS level SPDIF - the SPDIF signal is level shifted to CMOS and sent to 
+the DATA_3 pin on the DAC
+
+Controllers switching between Serial and SPDIF should select DATA_3 as the SPDIF source.
+
+![Inputs](images/inputs.jpg)
+
+## Volume Control ADC
+
+Some firmware supports volume control via the ADC header.
+
+For such firmware simply wire a 10K pot to the ADC header with the wiper to PB4 and 3.3V to the high end and GND 
+to the low end of the pot. This makes a simple convenient volume control from the panel.
+
+If your firmware supports volume control but you want to output full scale always - simply install a jumper from
+the 3.3V pin to the PB4 pin as indicated by the bar on the PCB silkscreen. This way you can apply analog volume control
+if desired.
+
+![Volume ADC](images/adc.jpg)
+
+## External MCK
+
+The module is designed to accept an external CMOS level master clock. 
+**Important!!!** You must omit the VDD_XO supply to use an external clock.
+
+![External MCK](images/ext_mck.jpg)
+
+## External IO
+
+All of the port expander GPIO pins and most of the on-board controller pins are accessible on the "EXT_IO" header.
+Use this when you want to externally switch features.
+
+Keep in mind in most cases the firmware will weakly pull up the IO net - so your switch should close to GND if that is
+the case. Refer to the firmware documentation for switch functions.
+
+The DIP switch SW1 maps to GPA(0-7) and SW2 to GPB(0-7) pos 1 = GPx0 pos 8 = GPx7.
+
+![External IO](images/ext_io.jpg)
+![External IO map](images/ext_io.png)
+
+
 ## GPIO
 
 The GPIO header exposes DVCC and GND from the DAC as well as the following:
@@ -86,6 +139,6 @@ Any controller must properly reset the DAC after power up conditions are met.
 
 ## LED(LOCK/AUTOMUTE)
 
-![GPIO Header2](images/leds.png)
-![GPIO Header1](images/IMG_2180.jpg)
+![LEDs1](images/leds.png)
+![LEDs2](images/IMG_2180.jpg)
 
