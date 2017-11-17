@@ -18,7 +18,7 @@ modules still in development.
 The module comes with either the ES9028 or the ES9038 which are identical in function other than supply current 
 requirements and output current.
 
-The ES9028 has a full scale output of 0.924 * AVCC at 202(+/-14%) ohms for the ES9028 and 50.5(+/-14%) ohms for the ES9038
+The DAC has a full scale output (0db-fs)  of 0.924 * AVCC at 202Ω for the ES9028 and 50.5Ω for the ES9038 +/- 14%.
 
 
 **Contents:**
