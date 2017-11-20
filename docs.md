@@ -12,3 +12,8 @@ layout: page
 ## Cronus
 
 [Overview]({{ site.baseurl }}{% link _docs_cronus/overview.md %})
+
+---
+### Hermes - Beagle Bone Black
+
+[Overview]({{ site.baseurl }}{% link _docs_hermes_bbb/overview.md %})
