@@ -30,3 +30,5 @@ collections:
     output: true
   docs_cronus:
     output: true
+  docs_hermes_bbb:
+    output: true

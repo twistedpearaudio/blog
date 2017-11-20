@@ -8,6 +8,9 @@ layout: page
 The Cronus platform is a system of integrated modular components that, when used together, make up an ideal, low jitter source by ensuring that all audio data is precisely aligned with the master clock used by the source itself. 
 There are two related functions that make this possible: isolation and reclocking. Either alone would not be enough because each treats a different mechanism for sources of phase noise.  We designed the Cronus system to provide an ideal digital audio source for a wide variety of audio DACs.  When in use, the Cronus system becomes the actual source standing in as a proxy for the original source.
 
+* TOC
+{:toc}
+
 ## Key Terms
 ---
 - **Source:** The hardware source of the audio stream.  For example, Amanero USB module, BeagleBone Black SoC, Raspberry Pi, etc. The Cronus platform currently supports only sources that can accept an external master clock or bit clock.
@@ -47,3 +50,8 @@ A key benefit of the Hermes design is that we can utilize new sources without ne
 
 **Importantly**, no other power is required on the Cronus side for any current Hermes module, though some modules such as the Hermes-BBB have power headers specific to that source; they are used only by the source itself, and are not connected to the Cronus, nor the “clean” side of the Hermes. See details on individual Hermes modules for more details.
 
+## Rhea Modules
+Rhea modules are simple but important (they are after all the master clocks from which all signals will be derived) 
+pluggable/replaceable clock modules. They are designed to fit in the DIP sockets provided on the Cronus. 
+This module makes it easy to use several types CMOS level clocks (XOs or Crystal Oscillators) and we supply excellent 
+examples of the most commonly required master clock frequencies. The C/S(Clock Select) signal coming in from the Hermes 
