@@ -5,7 +5,7 @@ layout: page
 
 # Hermes Beagle Bone Black
 
-[Schematic]({{ site.baseurl }}{% link _docs_hermes_bbb/assets/hermes-bbb-schematic.pdf %})
+[Project](https://github.com/twistedpearaudio/Hermes-BBB)
 
 ## Here are some of the features:
 
