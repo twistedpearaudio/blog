@@ -53,6 +53,10 @@ When using output stages like the Mercury, Ivy, Legato that mount directly to th
 solder the female analog output headers to the bottom of the board and the male (long tail) headers to the output stage.
 ![Soldering Outputs](images/IMG_2177.jpg)
 
+The reason for this is that if you ever change output stages you might need varying height clearances - this is done by 
+using different length male headers - by usingthe female header at the DAC you don't ever need to desolder that header 
+just because you changed output stages with a different height requirment.
+
 # Power Requirements:
 
 The VD supply is routed to all of the Trident supply header input pins. It also powers the on-board regulator for the
