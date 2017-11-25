@@ -54,8 +54,9 @@ solder the female analog output headers to the bottom of the board and the male 
 ![Soldering Outputs](images/IMG_2177.jpg)
 
 The reason for this is that if you ever change output stages you might need varying height clearances - this is done by 
-using different length male headers - by using the female header at the DAC and male at the output stagee you won't need 
-to desolder the DAC header if you changed output stages with a different height requirment.
+using different length male headers - by using the female header at the DAC and male at the output stage you shouldn't ever need 
+to desolder the DAC header if you changed output stages with a different height requirment. If you do it the other way - then
+if you ever need to change clearance height you will have to desolder the male header from the DAC.
 
 # Power Requirements:
 
