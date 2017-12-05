@@ -135,11 +135,11 @@ the case. Refer to the firmware documentation for switch functions.
 The DIP switch SW1 maps to GPA(0-7) and SW2 to GPB(0-7) pos 1 = GPx0 pos 8 = GPx7.
 
 ### EXT_IO Pins/Switch Mapping
-<table>
-    <tr><th>2</th><th>4</th><th>6</th><th>8</th><th>10</th><th>12</th><th>14</th><th>16</th><th>18</th><th>20</th><th>22</th><th>24</th></tr>
+<table style="background-color: #DDDDDD; cell">
     <tr><td>VDD_EXT</td><td>GND</td><td>SW2-1</td><td>SW2-2</td><td>SW2-3</td><td>SW2-4</td><td>SW2-5</td><td>SW2-6</td><td>SW2-7</td><td>SW2-8</td><td>PB3</td><td>I2C-SCL</td></tr>
+    <tr style="background-color: #DDFFDD;"><th>2</th><th>4</th><th>6</th><th>8</th><th>10</th><th>12</th><th>14</th><th>16</th><th>18</th><th>20</th><th>22</th><th>24</th></tr>
+    <tr style="background-color: #DDFFDD;"><th>1</th><th>3</th><th>5</th><th>7</th><th>9</th><th>11</th><th>13</th><th>15</th><th>17</th><th>19</th><th>21</th><th>23</th></tr>
     <tr><td>VDD_EXT</td><td>GND</td><td>SW1-1</td><td>SW1-2</td><td>SW1-3</td><td>SW1-4</td><td>SW1-5</td><td>SW1-6</td><td>SW1-7</td><td>SW1-8</td><td>RST/PB1</td><td>I2C-SDA</td></tr>
-    <tr><th>1</th><th>3</th><th>5</th><th>7</th><th>9</th><th>11</th><th>13</th><th>15</th><th>17</th><th>19</th><th>21</th><th>23</th></tr>
 </table>
 
 ![External IO](images/ext_io.jpg)
