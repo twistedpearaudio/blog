@@ -134,6 +134,12 @@ the case. Refer to the firmware documentation for switch functions.
 
 The DIP switch SW1 maps to GPA(0-7) and SW2 to GPB(0-7) pos 1 = GPx0 pos 8 = GPx7.
 
+###EXT_IO Pins and Switch Mapping
+<table>
+    <tr><td>2 VDD_EXT</td><td>4 GND</td><td>6 SW2-1</td><td>8 SW2-2</td><td>10 SW2-3</td><td>12 SW2-4</td><td>14 SW2-5</td><td>16 SW2-6</td><td>18 SW2-7</td><td>20 SW2-8</td><td>22 PB3</td><td>24 I2C-SCL</td></tr>
+    <tr><td>1 VDD_EXT</td><td>3 GND</td><td>5 SW1-1</td><td>7 SW1-2</td><td>9 SW1-3</td><td>11 SW1-4</td><td>13 SW1-5</td><td>15 SW1-6</td><td>17 SW1-7</td><td>19 SW1-8</td><td>21 DAC_RST</td><td>23 I2C-SDA</td></tr>
+</table>
+
 ![External IO](images/ext_io.jpg)
 ![External IO map](images/ext_io.png)
 
