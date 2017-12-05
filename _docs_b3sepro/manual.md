@@ -136,8 +136,10 @@ The DIP switch SW1 maps to GPA(0-7) and SW2 to GPB(0-7) pos 1 = GPx0 pos 8 = GPx
 
 ###EXT_IO Pins and Switch Mapping
 <table>
-    <tr><td>2 VDD_EXT</td><td>4 GND</td><td>6 SW2-1</td><td>8 SW2-2</td><td>10 SW2-3</td><td>12 SW2-4</td><td>14 SW2-5</td><td>16 SW2-6</td><td>18 SW2-7</td><td>20 SW2-8</td><td>22 PB3</td><td>24 I2C-SCL</td></tr>
-    <tr><td>1 VDD_EXT</td><td>3 GND</td><td>5 SW1-1</td><td>7 SW1-2</td><td>9 SW1-3</td><td>11 SW1-4</td><td>13 SW1-5</td><td>15 SW1-6</td><td>17 SW1-7</td><td>19 SW1-8</td><td>21 DAC_RST</td><td>23 I2C-SDA</td></tr>
+    <tr><th>2</th><th>4</th><th>6</th><th>8</th><th>10</th><th>12</th><th>14</th><th>16</th><th>18</th><th>20</th><th>22</th><th>24</th></tr>
+    <tr><td>VDD_EXT</td><td>GND</td><td>SW2-1</td><td>SW2-2</td><td>SW2-3</td><td>SW2-4</td><td>SW2-5</td><td>SW2-6</td><td>SW2-7</td><td>SW2-8</td><td>PB3</td><td>I2C-SCL</td></tr>
+    <tr><td>VDD_EXT</td><td>GND</td><td>SW1-1</td><td>SW1-2</td><td>SW1-3</td><td>SW1-4</td><td>SW1-5</td><td>SW1-6</td><td>SW1-7</td><td>SW1-8</td><td>RST/PB1</td><td>I2C-SDA</td></tr>
+    <tr><th>1</th><th>3</th><th>5</th><th>7</th><th>9</th><th>11</th><th>13</th><th>15</th><th>17</th><th>19</th><th>21</th><th>23</th></tr>
 </table>
 
 ![External IO](images/ext_io.jpg)
